@@ -1,6 +1,5 @@
-git config --gloabl user.email "212410368@o365.tku.edu.tw
-
-git config --gloabl user.name "github212410368"
+git config --global user.email "212410368@o365.tku.edu.tw"
+git config --global user.name "github212410368"
 
 
 
