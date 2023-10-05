@@ -1,7 +1,10 @@
 git config --global user.email "212410368@o365.tku.edu.tw"
 git config --global user.name "github212410368"
 
-
+git add .
+git status
+git commit -m "   "
+git push 
 
 git log --preetty=format:%h%x09%an%x09%ad%x09%
 
