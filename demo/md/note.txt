@@ -3,8 +3,13 @@ git config --global user.name "github212410368"
 
 
 
+git log --preetty=format:%h%x09%an%x09%ad%x09%
+
 //weekly temple
 [my github repo URL](https://github.com/github212410368/1121-sweb-demo-212410368.git)
+
+
+
 
 ### W04-P1:
 
@@ -19,3 +24,5 @@ git config --global user.name "github212410368"
 ![](w04-p3.png)
 
 ### W04-04: W3 git logs
+
+![](W04-p4.png)
