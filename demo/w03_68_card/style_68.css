@@ -1,0 +1,53 @@
+body {
+    background-color: beige;
+}
+
+.card {
+    background-color: lightskyblue;
+    border: 2px solid cornflowerblue;
+    max-width: 300px;
+    padding: 24px 32px;
+    margin: 32px;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.card-1 .icon {
+    border-color: violet;
+}
+
+.card-2 .icon {
+    border-color: lightseagreen;
+}
+
+.icon {
+    width: 40px;
+    height: 40px;
+    background-color: lightgoldenrodyellow;
+    border-radius: 50%;
+    margin: 0 auto;
+}
+
+.btn {
+    text-transform: capitalize;
+    padding: 8px 16px;
+    border-radius: 6px;
+    border: none; 
+}
+
+.btn-1 {
+    background-color: rgba(255, 105, 106, 0.2);
+    color: gainsboro;
+}
+
+.btn-2 {
+    background-color: rgba(0, 128, 128, 0.2); /* 修正 background-color 屬性的值 */
+    color: mediumpurpleblue;
+}
+
+img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 10px;
+}
