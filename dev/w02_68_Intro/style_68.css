@@ -1,0 +1,14 @@
+body{
+    background-color: lightskyblue !important;
+}
+
+.container{
+    background-color: mediumaquamarine;
+    max-width: #fff;
+    width: 500px;
+    border: 2px solid gold !important;
+    padding: 16px 30px 24px 30px;
+    margin: 30px auto;
+}
+
+    
