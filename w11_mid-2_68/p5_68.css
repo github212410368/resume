@@ -1,0 +1,17 @@
+/* Error: Expected "]".
+ *   ,
+ * 1 | [下午8:42] 劉錞謙
+ *   |     ^
+ *   '
+ *   p5_68.scss 1:5  root stylesheet */
+
+body::before {
+  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
+      "Droid Sans Mono", monospace, monospace;
+  white-space: pre;
+  display: block;
+  padding: 1em;
+  margin-bottom: 1em;
+  border-bottom: 2px solid black;
+  content: 'Error: Expected "]".\a   \2577 \a 1 \2502  [\4e0b \5348 8:42] \5289 \931e \8b19 \d\a   \2502      ^\a   \2575 \a   p5_68.scss 1:5  root stylesheet';
+}
