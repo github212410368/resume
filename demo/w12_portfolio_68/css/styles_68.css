@@ -206,6 +206,16 @@ Navbar
   cursor: pointer;
 }
 
+.navbar-fixed {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  background-color: white;
+  box-shadow: var(--light-shadow);
+  z-index: 5;
+}
+
 @media screen and (min-width: 768px) {
   .nav-links {
     display: flex;
@@ -267,6 +277,14 @@ sidebar
 
 .show-sidebar {
   transform: translateX(0);
+}
+
+.social-icon {
+  display: grid;
+  margin-top: 3rem;
+  width: 20rem;
+  grid-template-columns: repeat(5, 1fr);
+  justify-items: center;
 }
 
 /*# sourceMappingURL=styles_68.css.map */
