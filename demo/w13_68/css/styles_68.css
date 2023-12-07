@@ -188,6 +188,10 @@ p {
   transition: var(--transition);
 }
 
+.section {
+  padding: 5rem, 0;
+}
+
 .underline {
   width: 5rem;
   height: 0.25rem;
@@ -456,6 +460,7 @@ footer
   padding-bottom: 1rem;
 }
 .footer .social-icons {
+  margin-bottom: 1rem;
   color: var(--clr-primary-5);
 }
 .footer .social-icons:hover {

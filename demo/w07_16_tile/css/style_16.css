@@ -9,8 +9,8 @@
 
 :root {
   /* w5 --blogs css */
-  --primary: #645cff;
-  --primary-dark: #3c3799;
+  --primary: #5caeff;
+  --primary-dark: #0f94e7;
   --grey: #64748b;
   --grey-light: #f1f5f9;
   --grey-dark: #0f172a;
@@ -61,7 +61,7 @@ body {
   font-family: var(--ff-primary);
   font-size: 10px;
   color: var(--grey-dark);
-  background-color: var(--grey-light);
+  background-color: var(rgb(23, 175, 241));
 }
 li {
   list-style-type: none;
