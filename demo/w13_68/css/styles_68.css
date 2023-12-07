@@ -444,5 +444,26 @@ about
     grid-template-columns: 1fr 1fr;
   }
 }
+/*
+===============
+footer
+===============
+*/
+.footer {
+  background-color: #222;
+  display: grid;
+  place-items: center;
+  padding-bottom: 1rem;
+}
+.footer .social-icons {
+  color: var(--clr-primary-5);
+}
+.footer .social-icons:hover {
+  color: var(--clr-primary-10);
+}
+.footer p {
+  text-transform: capitalize;
+  font-size: 1.25rem;
+}
 
 /*# sourceMappingURL=styles_68.css.map */
