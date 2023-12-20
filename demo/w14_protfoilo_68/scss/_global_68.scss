@@ -149,22 +149,6 @@ p {
   color: var(--clr-primary-1);
   background: var(--clr-primary-7);
 }
-/* section */
-.section {
-  padding: 5rem 0;
-}
-
-.section-center {
-  width: 90vw;
-  margin: 0 auto;
-  max-width: 1170px;
-}
-
-@media screen and (min-width: 992px) {
-  .section-center {
-    width: 95vw;
-  }
-}
 
 .social-icons {
   display: flex;
@@ -180,8 +164,22 @@ p {
   transition: var(--transition);
 }
 
-.section{
-  padding: 5rem,0;
+
+/* section */
+.section {
+  padding: 5rem 0;
+}
+
+.section-center {
+  width: 90vw;
+  margin: 0 auto;
+  max-width: 1170px;
+}
+
+@media screen and (min-width: 992px) {
+  .section-center {
+    width: 95vw;
+  }
 }
 
 .underline {
