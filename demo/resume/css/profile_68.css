@@ -1,0 +1,59 @@
+.contact h1 {
+  font-size: 2rem;
+  color: #363638;
+  text-align: center;
+  padding-top: 0.5em;
+  margin-top: 0;
+}
+.contact .profile-card {
+  width: 100%;
+  max-width: 250px;
+  height: 400px;
+  margin: 0 auto;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  font-family: Arial, sans-serif;
+  margin-bottom: 10rem;
+  border: 1px solid #615d5d;
+}
+.contact .profile-card .profile-image {
+  width: 100%;
+  display: block;
+}
+.contact .profile-card .profile-content {
+  padding: 1em;
+}
+.contact .profile-card .profile-content .profile-title {
+  font-size: 2em;
+  margin-bottom: 0.5em;
+  color: #333;
+  text-align: left;
+  margin-left: 1rem;
+}
+.contact .profile-card .profile-content .profile-contacts .contact-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 0.5em;
+  font-size: 0.9em;
+  margin: 1rem 1rem;
+}
+.contact .profile-card .profile-content .profile-contacts .contact-item span:first-child {
+  font-weight: bold;
+}
+.contact .profile-card .profile-content .social-links {
+  display: flex;
+  justify-content: space-around;
+  padding-top: 0.5em;
+}
+.contact .profile-card .profile-content .social-links .social-link {
+  color: #615d5d;
+  font-size: 1.5em;
+}
+.contact .profile-card .profile-content .social-links .social-link:hover {
+  color: #1da1f2;
+}
+
+/*# sourceMappingURL=profile_68.css.map */
