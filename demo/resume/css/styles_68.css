@@ -59,6 +59,8 @@ Global Styles
   box-sizing: border-box;
 }
 
+
+
 body {
   font-family: var(--ff-secondary);
   background: var(--clr-white);
@@ -76,7 +78,8 @@ a {
 }
 
 img:not(.nav-logo) {
-  width: 100%;
+  width: 100px;
+  height: 100px;
   display: block;
 }
 
@@ -226,16 +229,23 @@ p {
   font-weight: 500;
 }
 .resume .img-area {
-  width: 200px;
-  height: 200px;
-  border-radius: 50%;
-  overflow: hidden;
-  margin: 25px auto;
-  border: 15px groove deepskyblue;
+  width: 200px; /* 圆形的直径 */
+  height: 200px; /* 圆形的直径，确保与宽度相同 */
+  border-radius: 50%; /* 创建圆形效果 */
+  overflow: hidden; /* 隐藏超出圆形区域的图片部分 */
+  justify-content: center; /* 水平居中（如果使用了flex布局） */
+  margin: 25px auto; /* 上下边距为25px，左右自动居中 */
+  border: 15px groove deepskyblue; /* 圆形的边框样式 */
+  display: flex; /* 使用flex布局对齐图片 */
+  align-items: center; /* 垂直居中（如果使用了flex布局） */
 }
+
 .resume .img-area img {
-  width: 100%;
+  width: auto; /* 自动调整图片宽度 */
+  height: 100%; /* 高度填满整个容器 */
+  object-fit: cover; /* 裁剪并覆盖图片以填满容器 */
 }
+
 .resume .main {
   display: flex;
   flex-wrap: wrap;

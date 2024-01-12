@@ -218,12 +218,20 @@ Navbar
   background-color: var(--clr-primary-10);
   height: 4rem;
 }
+
+.logo {
+  width: 100%; /* 设置宽度为100像素，可以根据需要调整 */
+  height: 100px; /* 保持宽高比例，自动调整高度 */
+  margin-top: 0;
+}
+
 .nav-center {
   display: flex;
   justify-content: space-between;
   align-items: center;
   width: 100%;
   position: relative;
+  height: 100px;
 }
 .nav-links {
   display: none;
@@ -275,28 +283,46 @@ Sidebar
   position: fixed;
   left: 0;
   top: 0;
-  width: 100%;
-  height: 100%;
+  width: 250px; /* 设置一个固定宽度 */
+  height: 100%; /* 使侧边栏填满整个屏幕高度 */
   background-color: var(--clr-grey-10);
   display: flex;
-  justify-content: center;
-  align-items: center;
+  flex-direction: column; /* 子元素垂直排列 */
+  justify-content: flex-start; /* 从顶部开始排列 */
+  align-items: center; /* 水平居中对齐 */
+  overflow-y: auto; /* 如果内容过多则显示滚动条 */
   transition: var(--transition);
   transform: translateX(-100%);
+  padding-top: 100px; /* 为顶部关闭按钮留出空间 *
 }
-.sidebar .close-btn {
-  position: absolute;
-  top: 1rem;
-  right: 1rem;
-  font-size: 2rem;
-  background-color: transparent;
-  border-color: transparent;
-  color: #bb2525;
-  cursor: pointer;
+
+.sidebar-links {
+  width: 100%; /* 链接占据整个侧边栏宽度 */
+  width: 100%;
+  list-style: none; /* 移除默认的列表样式 */
+  padding: 0; /* 移除默认的内边距 */
+  color: #f1f5f9;
 }
-.sidebar .close-btn:hover {
-  color: #e66b6b;
+
+.sidebar-links li {
+  margin: 10px 0; /* 给列表项之间添加垂直间距 */
 }
+
+.sidebar-links a {
+  font-size: 1rem; /* 根据侧边栏宽度调整字体大小 */
+  text-transform: capitalize;
+  color: var(--clr-grey-5);
+  letter-spacing: var(--spacing);
+  display: block; /* 使链接填满列表项宽度，便于点击 */
+  padding: 10px; /* 添加内边距以增加点击区域和美观 */
+  transition: color 0.3s ease; /* 平滑颜色变化效果 */
+  color: black; /*
+}
+
+.sidebar-links a:hover {
+  color: var(--clr-primary-5); /* 鼠标悬停时改变链接颜色 */
+}
+
 .sidebar-links {
   text-align: center;
 }
@@ -311,6 +337,7 @@ Sidebar
   transform: translateX(0);
 }
 
+
 .social-icons {
   display: flex;
   gap: 1.5rem;
@@ -322,6 +349,21 @@ Sidebar
   color: var(--clr-grey-5);
   transition: var(--transition);
 }
+
+.sidebar .close-btn {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  font-size: 2rem;
+  background-color: transparent;
+  border-color: transparent;
+  color: #bb2525;
+  cursor: pointer;
+}
+.sidebar .close-btn:hover {
+  color: #e66b6b;
+}
+
 
 /*
 ===============
@@ -654,3 +696,176 @@ p {
 }
 
 /*# sourceMappingURL=styles_68.css.map */
+
+
+.w5-blogs{
+
+  .nav{
+    display: flex;
+    align-items:center;
+    height: 5rem;
+    background-color: var(--clr-primary-10)
+    ;
+    border-bottom: 1px solid var(--clr-primary-10)
+}
+
+.nav-center{
+    display:flex;
+    width:100%;
+    justify-content:space-around;
+    align-items: center;
+}
+
+.nav-header h2{
+    font-size:1rem;
+    color: var(--clr-grey-5)
+}
+
+.nav-links{
+    display:flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+
+.nav-links li a{
+    text-decoration: none;
+    color: var(--clr-primary-3);
+    font-weight: 1rem;
+}
+
+
+.nav-links li a:hover{
+    color: var(--clr-primary-1);
+    font-weight: 500;
+    border-bottom: 1px solid rgb(67, 224, 0);
+    padding-bottom:3px;
+}
+
+.navbar-fixed{
+    position: fixed; /* Changed from display: fixed; */
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: var(--clr-white);
+    box-shadow: var(--light-shadow);
+    z-index: 999; /* High z-index to ensure the navbar stays on top of other elements */
+}
+
+
+:root{
+    --primary: #645cff;
+    --primary-dark: #3c3799;
+    --grey:#64748b;
+    --grey-light:#f1f5f9;
+    --grey-dark:#0f172a;
+    --border-radius:0.2rem;
+}
+
+body{
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size:16px;
+    color:var(--grey-dark);
+    background-color: var(rgb(231, 71, 23)); /* Add a variable name here */
+}
+
+.img{
+    width:100%;
+    height: 12rem;
+    display: block;
+    object-fit:cover;
+}
+
+.blogs{
+    padding: 3rem 1.5rem;
+}
+
+.header-container {
+    display: flex;
+    align-items: center; /* 使logo和标题垂直居中 */
+}
+
+.logo {
+    width: 70px; /* 或根据您的需求调整大小 */
+    height: auto; /* 保持图片的纵横比 */
+    margin-right: 10px; /* 在logo和标题之间提供一些空间 */
+}
+
+
+.section-title h2{
+    text-align: center;
+    text-transform: capitalize;
+    margin-bottom: 1.2rem;
+    letter-spacing: 1px;
+}
+
+.fixed-size {
+  width: 250px;
+  height: auto;
+}
+
+.fixed-size {
+    width: 50px;
+    height: auto;
+  }
+  
+
+.blogs-center{
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    gap:2rem;
+    background-color: white;
+}
+
+
+.blogs-center2 {
+    display:grid;
+    grid-template-columns: repeat(auto-fit,minmax(13rem,1fr));
+    gap:2rem;
+}
+
+
+.blog{
+    background-color: rgb(246, 240, 184);
+    padding: 0.75rem;
+    box-shadow:0px 5px 15px rgba(0,0,0,0.1); /* Add a small non-zero value for the alpha channel */
+    border-radius: var(--border-radius);
+}
+
+.blog-content span{
+    text-transform: uppercase;
+    color:var(--primary);
+    letter-spacing: 1.5px;
+}
+
+.blog-content h3 {
+    text-transform: capitalize;
+    margin:0.5rem 0;
+    letter-spacing: 1px;
+}
+
+@media screen and (min-width: 550px) {
+    .blog-center{
+        grid-template-columns: repeat(3, 1fr); 
+    } 
+}
+
+@media screen and (min-width: 992px) {
+    .blog-center{
+        grid-template-columns: repeat(4, 1fr); 
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .blog-center{
+        grid-template-columns: repeat(5, 1fr); 
+    }
+}
+
+@media screen and (min-width: 1400px) {
+    .blog-center{
+        grid-template-columns: repeat(6, 1fr); 
+    }
+}
+}
